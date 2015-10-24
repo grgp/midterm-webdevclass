@@ -1,15 +1,15 @@
-function display2() {
+function display() {
 	$.getJSON("_assets/data/post.json", function(json) {
 	    console.log(json);
 
       $.each(json, function (i, user) {
           var postcard = 
           	(
-          	'<div class="mdl-card mkk mdl-shadow--2dp"><div class="mdl-card__title">' 
+          	'<div class="mdl-cell mdl-card mkk mdl-shadow--2dp"><div class="mdl-card__title">' 
           	+ user.username + '</div><div class="mdl-card__supporting-text">' 
-          	+ user.post + '</div><div class="mdl-card__actions"></div></div>'
+          	+ user.post + '|' + user.date + '</div><div class="mdl-card__actions"></div></div>'
           	);
-          $('#posts').append(postcard);
+          $('#posts').prepend(postcard);
       }); //$.each(...)
 
 	});

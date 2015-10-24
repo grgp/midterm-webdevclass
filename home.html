@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<script type="text/javascript" src="_assets/js/jquery-2.1.4.js"></script>
 		<script type="text/javascript" src="_assets/js/displayposts.js"></script>
+		<script type="text/javascript" src="_assets/js/newpost.js"></script>
 
 	</head>
 	<body onload="display()">
@@ -26,10 +27,13 @@
 					<div class="mdl-grid">
 				    <form action="#">
 				      <div class="mdl-textfield mdl-js-textfield">
-				        <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
-				        <label class="mdl-textfield__label" for="sample5">Text lines...</label>
+				        <textarea class="mdl-textfield__input" type="text" rows= "3" id="postbox"></textarea>
+				        <label class="mdl-textfield__label" for="postbox">Text lines...</label>
 				      </div>
 				    </form>
+				    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="save" onclick="newpost()">
+					  	Post
+						</button>
 				  </div>
 
 				  <div class="mdl-grid" id="posts">
@@ -37,12 +41,7 @@
 							  <div class="mdl-card__title">Mr. Whiskers</div>
 							  <div class="mdl-card__supporting-text">I'm a cat. yes.</div>
 							  <div class="mdl-card__actions"></div>
-						 </div>
-						<div class="mdl-cell mdl-card mkk mdl-shadow--2dp">
-							  <div class="mdl-card__title">Mr. Whiskers</div>
-							  <div class="mdl-card__supporting-text">I'm a cat. yes.</div>
-							  <div class="mdl-card__actions"></div>
-						 </div>
+						</div>
 				  </div>
 
 				</div>
