@@ -3,18 +3,44 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="description" content="Currently an empty blog.">
-		<title>Login</title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-		<link rel="stylesheet" type="text/css" href="css/basic.css" id="theme_css"/>
-		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+		<title>Home</title>
+		<link rel="stylesheet" type="text/css" href="_assets/mdl/material.min.css">
+		<link rel="stylesheet" type="text/css" href="_assets/css/base.css">
+		<script type="text/javascript" src="_assets/mdl/material.min.js"></script>
+		<!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+		<script type="text/javascript" src="_assets/js/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="_assets/js/login.js"></script>
 
 	</head>
 	<body>
 
-		<footer>		
-		</footer>
+		<!-- header -->
 
-	</div>
+		<!-- content -->
+		<div class="mdl-layout mdl-js-layout">
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--3-col"></div>
+				<div class="mdl-cell mdl-cell--6-col">
+				
+					<div class="mdl-grid">
+				    <form action="#">
+				      <div class="mdl-textfield mdl-js-textfield">
+				        <textarea class="mdl-textfield__input" type="text" id="userbox"></textarea>
+				        <label class="mdl-textfield__label" for="postbox">Username</label>
+				      </div>
+				      <div class="mdl-textfield mdl-js-textfield">
+				        <textarea class="mdl-textfield__input" type="text" id="passbox"></textarea>
+				        <label class="mdl-textfield__label" for="postbox">Password</label>
+				      </div>
+				    </form>
+				    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="save" onclick="login()">
+					  	Login
+						</button>
+				  </div>
+				</div>
+				<div class="mdl-cell mdl-cell--3-col"></div>
+			</div><!-- mdl-grid -->
+		</div><!-- content -->
 
 	</body>
 </html>

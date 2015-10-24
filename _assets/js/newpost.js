@@ -1,12 +1,12 @@
 function newpost() {
+	var postingUser = sessionStorage.getItem('username');
 	var post = $('#postbox').val();
-
 	var currentdate = new Date(); 
 	var datetime = currentdate.getDate() + "-"
                 + (currentdate.getMonth()+1) + "-" 
                 + currentdate.getFullYear();
 
-  var toJson = { 	'username'	: 'tempUsername',
+  var toJson = { 	'username'	: postingUser,
   							 	'date'		: datetime,
   							 	'post'		: post,
   								'like'		: 0
@@ -33,7 +33,7 @@ function newpost() {
 								  '</div>' +
 								  '<div class="mdl-card__actions mdl-card--border">' +
 								  	'<span class="postdate">posted at ' + user.date + '</span>' +
-								  	'<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect likes">' +
+								  	'<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect likes" onclick="like(' + user.post + ')">' +
 	      							user.like + ' Likes' +
 	    							'</a>' +
 								  '</div><!-- button -->' +
