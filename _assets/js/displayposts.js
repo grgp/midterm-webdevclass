@@ -1,4 +1,12 @@
 function display() {
+
+	var postsArray = localStorage.getItem('postsArray');
+	if (!postsArray) {
+		console.log("entered")
+		var initJson = "[]";
+		localStorage.setItem('postsArray', initJson);
+	} 
+
 	$.getJSON("_assets/data/post.json", function(json) {
 	    console.log(json);
 

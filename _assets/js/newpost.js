@@ -1,18 +1,22 @@
 function newpost() {
-	var post = $('#postbox').value;
+	var post = $('#postbox').val();
 
 	var currentdate = new Date(); 
 	var datetime = currentdate.getDate() + "-"
                 + (currentdate.getMonth()+1) + "-" 
                 + currentdate.getFullYear();
 
-  var toJson = '{ "username":"' + 'tempUsername' 
-  							+ '","date":"' + datetime
-  							+ '","post":"' + post
-  							+ '","like":"0" },'
+  var toJson = { 	'username'	: 'tempUsername',
+  							 	'date'		: datetime,
+  							 	'post'		: post,
+  								'like'		: 0
+  							}
 
-  console.log("tojson::: " + toJson);
-  console.log(JSON.parse(toJson));
+	//console.log(JSON.stringify(toJson));
 
-	localStorage.setItem('postsArray', JSON.stringify(post));
+	var retriArr = jQuery.parseJSON(localStorage.getItem('postsArray'));
+	retriArr.push(toJson);
+	localStorage.setItem('postsArray', JSON.stringify(retriArr));
+	console.log(localStorage.getItem('postsArray'));
+
 }
