@@ -1,0 +1,27 @@
+[
+	{
+		"username":"Anto", 
+		"date":"21-10-2015",
+		"post":"Jalan-jalan sore dulu!",
+		"like":"14"
+	},
+
+	{
+		"username":"Budi", 
+		"date":"22-10-2015",
+		"post":"Menemani Eva belanja pagi, masih ngantuk..",
+		"like":"10"
+	},
+	{
+		"username":"Anto",
+		"date":"23-10-2015",
+		"post":"Choose a job you love, and you will never have to work a day in your life.-Confucius",
+		"like":"9"
+	},
+{"username":"Coki", "date":"24-10-2015", "post":"Jangan membuang sampah sembarangan!", "like":"0"},
+{"username":"Budi", "date":"21-10-2015", "post":"Jalan-jalan sore bareng Anto!", "like":"4"},
+{"username":"Dewi", "date":"23-10-2015", "post":"Lelah.", "like":"50"}, 
+{"username":"Eva", "date":"22-10-2015", "post":"Belanja pagi ke pasar tradisonal yuk!", "like":"70"},
+{"username":"Dewi", "date":"24-10-2015", "post":"UTS PPW dulu yah.", "like":"40"},
+{"username":"Coki", "date":"24-10-2015", "post":"Kebersihan itu sebagian dari iman!", "like":"0"},
+{"username":"Eva", "date":"24-10-2015", "post":"H-4 menuju Hari Sumpah Pemuda, Indonesia Jaya!", "like":"60"}]

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<users>
+	   <user id="usr101">
+		  <username>Anto</username>
+		  <password>anto</password>
+		  <name>Anto Ant</name>
+		  <email>ants@mail.com</email>
+		  <photo>anto.png</photo>
+		  <description>Cowok Tinggi Putih</description>
+	   </user>
+	   <user id="usr102">
+		  <username>Budi</username>
+		  <password>budi</password>
+		  <name>Budi Budiman</name>
+		  <email>budi@mail.com</email>
+		  <photo>budi.png</photo>
+		  <description>Cowok ganteng</description>
+	   </user>
+	   <user id="usr103">
+		  <username>Coki</username>
+		  <password>cokicoki</password>
+		  <name>Coki Coki</name>
+		  <email>coki@mail.com</email>
+		  <photo>coki.jpg</photo>
+		  <description>Coki coki enak rasanya</description>
+	   </user>
+	   <user id="usr104">
+		  <username>Dewi</username>
+		  <password>dewi</password>
+		  <name>Dewi</name>
+		  <email>dewi@mail.com</email>
+		  <photo>dewi.png</photo>
+		  <description>Dewi anak yang baik</description>
+	   </user>
+	   <user id="usr105">
+		  <username>Eva</username>
+		  <password>evangelion</password>
+		  <name>Eva Ave</name>
+		  <email>eva@mail.com</email>
+		  <photo>eva.png</photo>
+		  <description>Cewek yang tidak sombong</description>
+	   </user>
+</users>
