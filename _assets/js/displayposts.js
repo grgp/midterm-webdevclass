@@ -5,7 +5,18 @@ function display() {
 		console.log("entered")
 		var initJson = "[]";
 		localStorage.setItem('postsArray', initJson);
-	} 
+	} else {
+		var newerPosts = jQuery.parseJSON(localStorage.getItem('postsArray'));
+		$.each(newerPosts, function (i, user) {
+          var postcard = 
+          	(
+          	'<div class="mdl-cell mdl-card mkk mdl-shadow--2dp"><div class="mdl-card__title">' 
+          	+ user.username + '</div><div class="mdl-card__supporting-text">' 
+          	+ user.post + '|' + user.date + '</div><div class="mdl-card__actions"></div></div>'
+          	);
+          $('#posts').prepend(postcard);
+    }); //$.each(...)		
+	}
 
 	$.getJSON("_assets/data/post.json", function(json) {
 	    console.log(json);
@@ -19,6 +30,6 @@ function display() {
           	);
           $('#posts').prepend(postcard);
       }); //$.each(...)
-
 	});
+
 }
